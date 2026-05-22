@@ -1,0 +1,21 @@
+sample_id,model,prompt_type,target_field,value,unit,normalized_value,source_quote,answerable,json_valid
+S001,qwen-flash,evidence,net_income,99803000000,USD,99803000000.0,"Net income,96995,99803,94680",True,True
+S002,qwen-flash,evidence,operating_income,114301000000,USD,114301000000.0,"Operating income,114301,119437,108949",True,True
+S003,qwen-flash,evidence,gaap_net_income,1200,USD millions,1200000000,"For fiscal year 2023, GAAP net income was 1200.",True,True
+S004,qwen-flash,evidence,net_income,,,,The excerpt does not report net income.,False,True
+S005,qwen-flash,evidence,total_net_sales,383285000000,USD,383285000000.0,"Total net sales,383285,394328,365817",True,True
+S006,qwen-flash,evidence,total_net_sales,365817000000,USD,365817000000.0,"Total net sales,383285,394328,365817",True,True
+S007,qwen-flash,evidence,services_net_sales,85200000000,USD,85200000000.0,"Services net sales,85200,78129,68425",True,True
+S008,qwen-flash,evidence,products_net_sales,316199000000,USD,316199000000.0,"Products net sales,298085,316199,297392",True,True
+S009,qwen-flash,evidence,gaap_operating_income,2100,USD millions,2100000000,"For fiscal year 2023, GAAP operating income was 2100.",True,True
+S010,qwen-flash,evidence,gaap_diluted_eps,2.4,USD per diluted share,2.4,"For fiscal year 2023, GAAP diluted EPS was 2.40.",True,True
+S011,qwen-flash,evidence,operating_income,,,,The excerpt does not report operating income.,False,True
+S012,qwen-flash,evidence,adjusted_diluted_eps,,,,The excerpt does not report adjusted diluted EPS or non-GAAP EPS.,False,True
+S013,qwen-flash,evidence,free_cash_flow,,USD millions,,The excerpt does not explicitly report free cash flow.,False,True
+S014,qwen-flash,evidence,gross_profit,,USD millions,,The excerpt does not explicitly report gross profit.,False,True
+S015,qwen-flash,evidence,net_income,1200000000,USD,1200000000.0,"Net income,1200000,950000,810000",True,True
+S016,qwen-flash,evidence,operating_income,2100000000,USD,2100000000.0,"Operating income,2.10,1.85,1.60",True,True
+S017,qwen-flash,evidence,net_income_loss,-1200000000,USD,-1200000000.0,"Net income (loss),(1200),(950),810",True,True
+S018,qwen-flash,evidence,operating_income,108949000000,USD,108949000000.0,"Operating income,114301,119437,108949",True,True
+S019,qwen-flash,evidence,net_income,94680000000,USD,94680000000.0,"Net income,96995,99803,94680",True,True
+S020,qwen-flash,evidence,gaap_operating_income,2100,USD millions,2100000000,"For fiscal year 2023, GAAP operating income was 2100.",True,True

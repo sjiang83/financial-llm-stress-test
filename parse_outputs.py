@@ -1,12 +1,15 @@
 ﻿import json
 import csv
+import sys
 from pathlib import Path
 
-input_dir = Path("results/raw_outputs/deepseek/evidence")
+model_name = sys.argv[1] if len(sys.argv) > 1 else "deepseek"
+
+input_dir = Path(f"results/raw_outputs/{model_name}/evidence")
 output_dir = Path("results/parsed_outputs")
 output_dir.mkdir(parents=True, exist_ok=True)
 
-output_csv = output_dir / "deepseek_evidence_parsed.csv"
+output_csv = output_dir / f"{model_name}_evidence_parsed.csv"
 
 def normalize_value(value, unit):
     if value is None:

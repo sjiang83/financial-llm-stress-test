@@ -1,14 +1,17 @@
 ﻿import csv
 import json
+import sys
 from pathlib import Path
 
-parsed_path = Path("results/parsed_outputs/deepseek_evidence_parsed.csv")
+model_name = sys.argv[1] if len(sys.argv) > 1 else "deepseek"
+
+parsed_path = Path(f"results/parsed_outputs/{model_name}_evidence_parsed.csv")
 truth_path = Path("data/ground_truth.csv")
 samples_path = Path("data/samples.jsonl")
 
 output_dir = Path("results/evaluation")
 output_dir.mkdir(parents=True, exist_ok=True)
-output_path = output_dir / "deepseek_evidence_eval.csv"
+output_path = output_dir / f"{model_name}_evidence_eval.csv"
 
 def to_bool(x):
     return str(x).strip().lower() == "true"
@@ -24,14 +27,12 @@ def normalize_number(x):
     except ValueError:
         return x
 
-# Load ground truth
 truth = {}
 with open(truth_path, "r", encoding="utf-8-sig", newline="") as f:
     reader = csv.DictReader(f)
     for row in reader:
         truth[row["sample_id"]] = row
 
-# Load original sample text
 sample_texts = {}
 with open(samples_path, "r", encoding="utf-8-sig") as f:
     for line in f:
@@ -66,7 +67,6 @@ with open(parsed_path, "r", encoding="utf-8-sig", newline="") as f:
             quote_correct = pred_quote != "" and pred_quote in original_text
 
         exact_quote_match = pred_quote == expected_quote
-
         overall_correct = value_correct and answerable_correct and quote_correct
 
         rows.append({
@@ -112,6 +112,7 @@ with open(output_path, "w", encoding="utf-8", newline="") as f:
 total = len(rows)
 correct = sum(1 for r in rows if r["overall_correct"])
 
+print(f"Model: {model_name}")
 print(f"Evaluated {total} rows.")
 print(f"Overall correct: {correct}/{total} = {correct / total:.2%}")
 print(f"Saved to {output_path}")

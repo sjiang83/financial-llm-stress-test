@@ -1,0 +1,21 @@
+sample_id,case_type,target_field,expected_value,predicted_value,value_correct,expected_answerable,predicted_answerable,answerable_correct,expected_quote,predicted_quote,quote_correct,exact_quote_match,json_valid,overall_correct
+S001,multi_year,net_income,99803000000,99803000000.0,True,true,True,True,"Net income,96995,99803,94680","Net income,96995,99803,94680",True,True,True,True
+S002,field_confusion,operating_income,114301000000,114301000000.0,True,true,True,True,"Operating income,114301,119437,108949","Operating income,114301,119437,108949",True,True,True,True
+S003,gaap_non_gaap,gaap_net_income,1200000000,1200000000,True,true,True,True,"For fiscal year 2023, GAAP net income was 1200.","For fiscal year 2023, GAAP net income was 1200.",True,True,True,True
+S004,missing_field,net_income,null,,True,false,False,True,,The excerpt does not report net income.,True,False,True,True
+S005,unit_conversion,total_net_sales,383285000000,383285000000.0,True,true,True,True,"Total net sales,383285,394328,365817","Total net sales,383285,394328,365817",True,True,True,True
+S006,multi_year,total_net_sales,365817000000,365817000000.0,True,true,True,True,"Total net sales,383285,394328,365817","Total net sales,383285,394328,365817",True,True,True,True
+S007,field_confusion,services_net_sales,85200000000,85200000000.0,True,true,True,True,"Services net sales,85200,78129,68425","Services net sales,85200,78129,68425",True,True,True,True
+S008,field_confusion,products_net_sales,316199000000,316199000000.0,True,true,True,True,"Products net sales,298085,316199,297392","Products net sales,298085,316199,297392",True,True,True,True
+S009,gaap_non_gaap,gaap_operating_income,2100000000,2100000000,True,true,True,True,"For fiscal year 2023, GAAP operating income was 2100.","For fiscal year 2023, GAAP operating income was 2100.",True,True,True,True
+S010,gaap_non_gaap,gaap_diluted_eps,2.40,2.4,True,true,True,True,"For fiscal year 2023, GAAP diluted EPS was 2.40.","For fiscal year 2023, GAAP diluted EPS was 2.40.",True,True,True,True
+S011,missing_field,operating_income,null,,True,false,False,True,,The excerpt does not report operating income.,True,False,True,True
+S012,missing_field,adjusted_diluted_eps,null,,True,false,False,True,,The excerpt does not report adjusted diluted EPS or non-GAAP EPS.,True,False,True,True
+S013,missing_field,free_cash_flow,null,,True,false,False,True,,The excerpt does not explicitly report free cash flow.,True,False,True,True
+S014,missing_field,gross_profit,null,,True,false,False,True,,The excerpt does not explicitly report gross profit.,True,False,True,True
+S015,unit_conversion,net_income,1200000000,1200000000.0,True,true,True,True,"Net income,1200000,950000,810000","Net income,1200000,950000,810000",True,True,True,True
+S016,unit_conversion,operating_income,2100000000,2100000000.0,True,true,True,True,"Operating income,2.10,1.85,1.60","Operating income,2.10,1.85,1.60",True,True,True,True
+S017,unit_conversion,net_income_loss,-1200000000,-1200000000.0,True,true,True,True,"Net income (loss),(1200),(950),810","Net income (loss),(1200),(950),810",True,True,True,True
+S018,multi_year,operating_income,108949000000,108949000000.0,True,true,True,True,"Operating income,114301,119437,108949","Operating income,114301,119437,108949",True,True,True,True
+S019,multi_year,net_income,94680000000,94680000000.0,True,true,True,True,"Net income,96995,99803,94680","Net income,96995,99803,94680",True,True,True,True
+S020,gaap_non_gaap,gaap_operating_income,2100000000,2100000000,True,true,True,True,"For fiscal year 2023, GAAP operating income was 2100.","For fiscal year 2023, GAAP operating income was 2100.",True,True,True,True
