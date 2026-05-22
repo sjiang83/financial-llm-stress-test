@@ -1,14 +1,13 @@
 ﻿import json
+import sys
 
-sample_id = "S001"
+sample_id = sys.argv[1] if len(sys.argv) > 1 else "S001"
 prompt_path = "prompts/evidence_prompt.txt"
 samples_path = "data/samples.jsonl"
 
-# 读取 prompt
 with open(prompt_path, "r", encoding="utf-8-sig") as f:
     system_prompt = f.read()
 
-# 读取指定 sample
 target_sample = None
 
 with open(samples_path, "r", encoding="utf-8-sig") as f:
@@ -21,7 +20,6 @@ with open(samples_path, "r", encoding="utf-8-sig") as f:
 if target_sample is None:
     raise ValueError(f"Sample not found: {sample_id}")
 
-# 拼接成模型输入
 final_prompt = f"""
 {system_prompt}
 
