@@ -1,0 +1,13 @@
+﻿sample_id,target_field,expected_value,unit,expected_quote,answerable,case_type
+S001,net_income,99803000000,USD,"Net income,96995,99803,94680",true,multi_year
+S002,operating_income,114301000000,USD,"Operating income,114301,119437,108949",true,field_confusion
+S003,gaap_net_income,1200000000,USD,"For fiscal year 2023, GAAP net income was 1200.",true,gaap_non_gaap
+S004,net_income,null,null,"",false,missing_field
+S005,total_net_sales,383285000000,USD,"Total net sales,383285,394328,365817",true,unit_conversion
+S006,total_net_sales,365817000000,USD,"Total net sales,383285,394328,365817",true,multi_year
+S007,services_net_sales,85200000000,USD,"Services net sales,85200,78129,68425",true,field_confusion
+S008,products_net_sales,316199000000,USD,"Products net sales,298085,316199,297392",true,field_confusion
+S009,gaap_operating_income,2100000000,USD,"For fiscal year 2023, GAAP operating income was 2100.",true,gaap_non_gaap
+S010,gaap_diluted_eps,2.40,USD_per_diluted_share,"For fiscal year 2023, GAAP diluted EPS was 2.40.",true,gaap_non_gaap
+S011,operating_income,null,null,"",false,missing_field
+S012,adjusted_diluted_eps,null,null,"",false,missing_field
