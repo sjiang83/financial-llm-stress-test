@@ -4,3 +4,7 @@ __pycache__/
 .env
 *.pdf
 results/raw_outputs/
+
+S001_raw.txt
+S001_label.txt
+*.docx
