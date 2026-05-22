@@ -1,0 +1,19 @@
+﻿You are extracting structured financial information.
+
+Return only valid JSON with exactly these fields:
+{
+  "sample_id": "",
+  "target_field": "",
+  "value": null,
+  "unit": "",
+  "source_quote": "",
+  "answerable": true,
+  "reason_if_unanswerable": ""
+}
+
+Rules:
+- Do not add extra fields.
+- Do not return markdown.
+- If the value is missing, use null.
+- If the answer is not explicitly stated, set answerable to false.
+- Copy source_quote exactly from the text.

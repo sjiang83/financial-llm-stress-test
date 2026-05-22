@@ -1,0 +1,21 @@
+﻿You are extracting financial information from a document.
+
+Task:
+Answer the question based only on the provided text.
+
+Return only JSON with the following fields:
+{
+  "sample_id": "",
+  "target_field": "",
+  "value": null,
+  "unit": "",
+  "source_quote": "",
+  "answerable": true
+}
+
+Rules:
+- Use only information explicitly stated in the text.
+- If the answer is not explicitly stated, set "value" to null and "answerable" to false.
+- The source_quote must be copied exactly from the text.
+- Do not calculate values unless the question explicitly asks for unit conversion.
+- Return valid JSON only.

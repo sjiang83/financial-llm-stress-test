@@ -1,0 +1,13 @@
+﻿Extract the requested financial value from the provided text.
+
+Return the answer in JSON.
+
+Use this format:
+{
+  "sample_id": "",
+  "target_field": "",
+  "value": null,
+  "unit": "",
+  "source_quote": "",
+  "answerable": true
+}
