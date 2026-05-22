@@ -11,3 +11,11 @@ S009,gaap_operating_income,2100000000,USD,"For fiscal year 2023, GAAP operating 
 S010,gaap_diluted_eps,2.40,USD_per_diluted_share,"For fiscal year 2023, GAAP diluted EPS was 2.40.",true,gaap_non_gaap
 S011,operating_income,null,null,"",false,missing_field
 S012,adjusted_diluted_eps,null,null,"",false,missing_field
+S013,free_cash_flow,null,null,"",false,missing_field
+S014,gross_profit,null,null,"",false,missing_field
+S015,net_income,1200000000,USD,"Net income,1200000,950000,810000",true,unit_conversion
+S016,operating_income,2100000000,USD,"Operating income,2.10,1.85,1.60",true,unit_conversion
+S017,net_income_loss,-1200000000,USD,"Net income (loss),(1200),(950),810",true,unit_conversion
+S018,operating_income,108949000000,USD,"Operating income,114301,119437,108949",true,multi_year
+S019,net_income,94680000000,USD,"Net income,96995,99803,94680",true,multi_year
+S020,gaap_operating_income,2100000000,USD,"For fiscal year 2023, GAAP operating income was 2100.",true,gaap_non_gaap
