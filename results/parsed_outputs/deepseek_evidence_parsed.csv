@@ -1,0 +1,21 @@
+sample_id,model,prompt_type,target_field,value,unit,normalized_value,source_quote,answerable,json_valid
+S001,deepseek-chat,evidence,net_income,99803000000,USD,99803000000.0,"Net income,96995,99803,94680",True,True
+S002,deepseek-chat,evidence,operating_income,114301000000,USD,114301000000.0,"Operating income,114301,119437,108949",True,True
+S003,deepseek-chat,evidence,gaap_net_income,1200,USD millions,1200000000,"For fiscal year 2023, GAAP net income was 1200.",True,True
+S004,deepseek-chat,evidence,net_income,,,,The excerpt does not report net income.,False,True
+S005,deepseek-chat,evidence,total_net_sales,383285000000,USD,383285000000.0,"Total net sales,383285,394328,365817",True,True
+S006,deepseek-chat,evidence,total_net_sales,365817000000,USD,365817000000.0,"Total net sales,383285,394328,365817",True,True
+S007,deepseek-chat,evidence,services_net_sales,85200000000,USD,85200000000.0,"Services net sales,85200,78129,68425",True,True
+S008,deepseek-chat,evidence,products_net_sales,316199000000,USD,316199000000.0,"Products net sales,298085,316199,297392",True,True
+S009,deepseek-chat,evidence,gaap_operating_income,2100,USD millions,2100000000,"For fiscal year 2023, GAAP operating income was 2100.",True,True
+S010,deepseek-chat,evidence,gaap_diluted_eps,2.4,USD per diluted share,2.4,"For fiscal year 2023, GAAP diluted EPS was 2.40.",True,True
+S011,deepseek-chat,evidence,operating_income,,,,The excerpt does not report operating income.,False,True
+S012,deepseek-chat,evidence,adjusted_diluted_eps,,USD per diluted share,,The excerpt does not report adjusted diluted EPS or non-GAAP EPS.,False,True
+S013,deepseek-chat,evidence,free_cash_flow,,,,The excerpt does not explicitly report free cash flow.,False,True
+S014,deepseek-chat,evidence,gross_profit,,USD millions,,The excerpt does not explicitly report gross profit.,False,True
+S015,deepseek-chat,evidence,net_income,1200000000,USD,1200000000.0,"Net income,1200000,950000,810000",True,True
+S016,deepseek-chat,evidence,operating_income,2100000000,USD,2100000000.0,"Operating income,2.10,1.85,1.60",True,True
+S017,deepseek-chat,evidence,net_income_loss,-1200000000,USD,-1200000000.0,(1200),True,True
+S018,deepseek-chat,evidence,operating_income,108949000000,USD,108949000000.0,"Operating income,114301,119437,108949",True,True
+S019,deepseek-chat,evidence,net_income,94680000000,USD,94680000000.0,"Net income,96995,99803,94680",True,True
+S020,deepseek-chat,evidence,gaap_operating_income,2100,USD millions,2100000000,"For fiscal year 2023, GAAP operating income was 2100.",True,True
