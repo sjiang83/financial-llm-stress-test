@@ -61,6 +61,13 @@ The evaluation checks:
 | Qwen-Flash | 38 | 40 | 95.00% |
 | DeepSeek | 40 | 40 | 100.00% |
 
+## Error Type Summary
+
+| Model | Questions | Accuracy | Hallucination / Misleading Context Error | Missing Field Error | Unit / Numeric Error |
+|---|---:|---:|---:|---:|---:|
+| Qwen-Flash | 40 | 95.00% | 1 | 0 | 1 |
+| DeepSeek | 40 | 100.00% | 0 | 0 | 0 |
+
 Qwen-Flash failed on two boundary cases:
 
 | Sample | Case Type | Error |
