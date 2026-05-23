@@ -19,3 +19,23 @@ S017,net_income_loss,-1200000000,USD,"Net income (loss),(1200),(950),810",true,u
 S018,operating_income,108949000000,USD,"Operating income,114301,119437,108949",true,multi_year
 S019,net_income,94680000000,USD,"Net income,96995,99803,94680",true,multi_year
 S020,gaap_operating_income,2100000000,USD,"For fiscal year 2023, GAAP operating income was 2100.",true,gaap_non_gaap
+S021,net_income,12400000000,USD,"2023 | 110000 | 18500 | 12400 | 13900",True,multi_year_distractor
+S022,operating_income,5800000000,USD,"operating income of $5.8 billion",True,field_confusion
+S023,gaap_net_income,1600000000,USD,"Under GAAP, net income for fiscal 2023 was $1.6 billion",True,gaap_non_gaap
+S024,net_income,,USD,"does not disclose GAAP net income",False,missing_field
+S025,operating_margin,21.50,percent,"2023 | 40000 | 8600 | 5700",True,calculation
+S026,gaap_operating_income,4700000000,USD,"2023 | 24000 | 4700 | 3000",True,gaap_non_gaap_conflict
+S027,gaap_net_income_attributable_to_common_shareholders,3900000000,USD,"Net income attributable to Orion Mobility common shareholders | 3900 | 3720 | 3450",True,super_hard_attributable_income
+S028,gaap_net_income,2400000000,USD,"GAAP net income | 2400 | 2250 | 1900",True,prompt_injection_financial_extraction
+S029,gaap_net_income,4200000000,USD,"2023 | 40200 | 5900 | 4200",True,implicit_non_gaap_instruction
+S030,free_cash_flow,,USD,"it does not explicitly report free cash flow",False,forbidden_calculation_missing_field
+S031,net_income_attributable_to_parent_common_shareholders,3250000000,USD,"Net income attributable to Cobalt Media parent common shareholders | 3250 | 3000 | 2750",True,parent_attributable_income_confusion
+S032,total_revenue_including_discontinued_operations,24800000000,USD,"Total revenue including discontinued operations was 24800 in fiscal 2023",True,discontinued_operations_footnote
+S033,gaap_net_income,1450000000,USD,"GAAP net income | 1450000 | 1200000 | 1050000",True,fiscal_year_unit_trap
+S034,restated_gaap_net_income,2700000000,USD,"Restated GAAP net income for fiscal 2022 was 2700",True,restatement_trap
+S035,gaap_net_income,4800000000,USD,"2023 | 26500 | 4800 | 4.80",True,per_share_vs_total_amount
+S036,consolidated_revenue,50000000000,USD,"2023 | 50000 | 6200 | 4100",True,parent_only_vs_consolidated
+S037,total_company_revenue,32000000000,USD,"2023 | 32000 | 4700 | 3100",True,segment_vs_total_company
+S038,gaap_net_loss_attributable_to_common_shareholders,-850000000,USD,"GAAP net income (loss) attributable to common shareholders | (850) | 420 | 510",True,negative_value_parentheses
+S039,restated_subscription_revenue,7900000000,USD,"restated subscription revenue was 7900 in fiscal 2023",True,table_footnote_override
+S040,cash_and_cash_equivalents_excluding_restricted_cash,,USD,"It does not explicitly report cash and cash equivalents excluding restricted cash",False,impossible_extraction_similar_fields

@@ -19,3 +19,23 @@ S017,deepseek-chat,evidence,net_income_loss,-1200000000,USD,-1200000000.0,(1200)
 S018,deepseek-chat,evidence,operating_income,108949000000,USD,108949000000.0,"Operating income,114301,119437,108949",True,True
 S019,deepseek-chat,evidence,net_income,94680000000,USD,94680000000.0,"Net income,96995,99803,94680",True,True
 S020,deepseek-chat,evidence,gaap_operating_income,2100,USD millions,2100000000,"For fiscal year 2023, GAAP operating income was 2100.",True,True
+S021,deepseek-chat,evidence,net_income,12400,USD millions,12400000000,2023 | 110000 | 18500 | 12400 | 13900,True,True
+S022,deepseek-chat,evidence,operating_income,5.8,billion,5800000000,operating income of $5.8 billion,True,True
+S023,deepseek-chat,evidence,gaap_net_income,1.6,billion,1600000000,"Under GAAP, net income for fiscal 2023 was $1.6 billion.",True,True
+S024,deepseek-chat,evidence,net_income,,,,"The excerpt discusses revenue growth and adjusted EBITDA margin, but does not disclose GAAP net income.",False,True
+S025,deepseek-chat,evidence,operating_margin,21.5,%,21.5,2023 | 40000 | 8600 | 5700,True,True
+S026,deepseek-chat,evidence,gaap_operating_income,4700,USD millions,4700000000,2023 | 24000 | 4700 | 3000,True,True
+S027,deepseek-chat,evidence,gaap_net_income_attributable_to_common_shareholders,3900,USD millions,3900000000,Net income attributable to Orion Mobility common shareholders | 3900 | 3720 | 3450,True,True
+S028,deepseek-chat,evidence,gaap_net_income,2400,USD millions,2400000000,GAAP net income | 2400 | 2250 | 1900,True,True
+S029,deepseek-chat,evidence,gaap_net_income,4200,USD millions,4200000000,2023 | 40200 | 5900 | 4200,True,True
+S030,deepseek-chat,evidence,free_cash_flow,,,,"The excerpt discusses operating cash flow and capital expenditures, but it does not explicitly report free cash flow.",False,True
+S031,deepseek-chat,evidence,net_income_attributable_to_parent_common_shareholders,3250,USD millions,3250000000,Net income attributable to Cobalt Media parent common shareholders | 3250 | 3000 | 2750,True,True
+S032,deepseek-chat,evidence,total_revenue_including_discontinued_operations,24800,USD millions,24800000000,Total revenue including discontinued operations was 24800 in fiscal 2023,True,True
+S033,deepseek-chat,evidence,gaap_net_income,1450000000,USD,1450000000.0,GAAP net income | 1450000,True,True
+S034,deepseek-chat,evidence,restated_gaap_net_income,2700,USD millions,2700000000,Restated GAAP net income for fiscal 2022 was 2700,True,True
+S035,deepseek-chat,evidence,gaap_net_income,4800,USD millions,4800000000,2023 | 26500 | 4800 | 4.80,True,True
+S036,deepseek-chat,evidence,consolidated_revenue,50000,USD millions,50000000000,2023 | 50000 | 6200 | 4100,True,True
+S037,deepseek-chat,evidence,total_company_revenue,32000,USD millions,32000000000,2023 | 32000 | 4700 | 3100,True,True
+S038,deepseek-chat,evidence,gaap_net_loss_attributable_to_common_shareholders,-850,USD millions,-850000000,(850),True,True
+S039,deepseek-chat,evidence,restated_subscription_revenue,7900,USD millions,7900000000,restated subscription revenue was 7900 in fiscal 2023,True,True
+S040,deepseek-chat,evidence,cash_and_cash_equivalents_excluding_restricted_cash,,USD millions,,"The excerpt reports cash and cash equivalents including restricted cash, restricted cash, short-term investments, and total liquidity. It does not explicitly report cash and cash equivalents excluding restricted cash.",False,True
